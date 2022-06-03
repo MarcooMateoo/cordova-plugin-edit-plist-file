@@ -30,19 +30,12 @@
     <!-- ios -->
     <platform name="ios">
         
-        <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-            </array>
-        </config-file>
+        <!-- microphone permission-->
+        <platform name="ios">
+            <config-file parent="NSMicrophoneUsageDescription" target="*-Info.plist">
+                <string>This app needs microphone access</string>
+            </config-file>
+        </platform>
         
         
         
