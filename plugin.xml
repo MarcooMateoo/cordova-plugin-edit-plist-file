@@ -32,9 +32,9 @@
         
         <!-- tracking usage permission-->
         <platform name="ios">
-            <edit-config target="NSUserTrackingUsageDescription" file="*-Info.plist" mode="merge">
+            <config-file parent="NSUserTrackingUsageDescription" target="*-Info.plist">
                 <string>My tracking usage description</string>
-            </edit-config>
+            </config-file>
         </platform>
         
         
