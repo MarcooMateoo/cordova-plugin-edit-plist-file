@@ -30,13 +30,12 @@
     <!-- ios -->
     <platform name="ios">
         
-        <!-- microphone permission-->
+        <!-- tracking usage permission-->
         <platform name="ios">
-            <config-file parent="NSMicrophoneUsageDescription" target="*-Info.plist">
-                <string>This app needs microphone access</string>
-            </config-file>
+            <edit-config target="NSUserTrackingUsageDescription" file="*-Info.plist" mode="merge">
+                <string>My tracking usage description</string>
+            </edit-config>
         </platform>
-        
         
         
     </platform>
